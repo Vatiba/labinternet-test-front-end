@@ -1,8 +1,11 @@
+import Text from 'components/atoms/Text'
 import React from 'react'
 
 function FirstScreen() {
    return (
-      <div>FirstScreen</div>
+      <Text.H1>
+         First screen
+      </Text.H1>
    )
 }
 
