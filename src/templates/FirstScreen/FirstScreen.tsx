@@ -3,9 +3,11 @@ import React from 'react'
 
 function FirstScreen() {
    return (
-      <Text.H1>
+      <>
+      <Text.bodyLink12 href="#">
          First screen
-      </Text.H1>
+      </Text.bodyLink12>
+      </>
    )
 }
 
