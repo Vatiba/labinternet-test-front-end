@@ -1,0 +1,61 @@
+.drawerWrapper {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(17, 22, 38, 0.3);
+  z-index: 1200;
+}
+
+.drawer {
+  position: fixed;
+  transition: transform var(--animation-duration) ease;
+  background-color: var(--white-color);
+  z-index: 1201;
+}
+
+.anchor-left {
+  top: 0;
+  left: 0;
+  transform: translateX(-100%);
+  height: 100%;
+}
+
+.draw-left {
+  transform: translateX(0);
+}
+
+.anchor-right {
+  top: 0;
+  right: 0;
+  transform: translateX(100%);
+  height: 100%;
+}
+
+.draw-right {
+  transform: translateX(0);
+}
+
+.anchor-top {
+  top: 0;
+  left: 0;
+  transform: translateY(-100%);
+  width: 100%;
+}
+
+.draw-top {
+  transform: translateY(0);
+}
+
+.anchor-bottom {
+  bottom: 0;
+  left: 0;
+  transform: translateY(100%);
+  width: 100%;
+}
+
+.draw-bottom {
+  transform: translateY(0);
+}
