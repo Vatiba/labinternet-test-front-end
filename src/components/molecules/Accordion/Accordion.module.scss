@@ -1,0 +1,31 @@
+.accordion {
+   &__btn {
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      border: none;
+      background-color: transparent;
+      overflow: hidden;
+      margin-bottom: 24px;
+   }
+
+   &__openIcon {
+      transition: transform var(--animation-duration) ease;
+   }
+
+   &__openIcon_active {
+      transform: rotate(45deg);
+   }
+
+   &__notExpanded {
+      overflow: hidden;
+      transition: height ease var(--animation-duration);
+   }
+
+   &__expanded {
+      transition: height ease var(--animation-duration);
+      overflow: hidden;
+   }
+}
