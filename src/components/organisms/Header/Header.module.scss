@@ -1,0 +1,39 @@
+.header {
+   &__inner {
+      display: flex;
+      justify-content: space-between;
+      padding: 28px 15px;
+   }
+
+   &__logoWrapper {
+      display: flex;
+      align-items: center;
+   }
+
+   &__logo {
+      margin-right: 9px;
+   }
+
+   &__logoTxt {
+      color: var(--white-color);
+   }
+
+   &__nav {
+      display: flex;
+   }
+
+   &__navItem {
+      margin-left: 24px;
+      color: var(--white-color);
+
+      &:hover {
+         text-decoration: underline;
+      }
+   }
+}
+
+.burgerBtn {}
+
+.burgerBtnStick {
+   background-color: var(--black-color);
+}

@@ -1,13 +1,13 @@
-import Text from 'components/atoms/Text'
-import React from 'react'
+import Header from 'components/organisms/Header';
+import styles from './FirstScreen.module.scss';
 
 function FirstScreen() {
    return (
-      <>
-      <Text.bodyLink12 href="#">
-         First screen
-      </Text.bodyLink12>
-      </>
+      <div className={styles.wrapper}>
+         <div className={styles.wrapper__inner}>
+            <Header />
+         </div>
+      </div>
    )
 }
 

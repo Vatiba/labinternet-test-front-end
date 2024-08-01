@@ -1,0 +1,39 @@
+.btn {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   height: 62px;
+   width: 62px;
+   cursor: pointer;
+   background: none;
+   border: none;
+   position: relative;
+
+   &__stick {
+      position: absolute;
+      width: 22px;
+      height: 2px;
+      background-color: var(--white-color);
+      transition: all var(--animation-duration) ease;
+   }
+
+   &__stickTop {
+      top: 25px;
+   }
+
+   &__stickBottom {
+      bottom: 25px;
+   }
+
+   &__stickTop_active {
+      top: 30px;
+      transform: rotate(45deg);
+   }
+
+   &__stickBottom_active {
+      bottom: 30px;
+      transform: rotate(-45deg);
+   }
+
+}
