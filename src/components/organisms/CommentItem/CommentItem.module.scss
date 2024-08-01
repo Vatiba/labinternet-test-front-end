@@ -2,6 +2,7 @@
    padding: 22px;
    border-radius: 8px;
    box-shadow: 0px 5px 24px 0px transparentize($color: #000000, $amount: 0.9);
+   cursor: pointer;
 
    &__head {
       display: flex;
