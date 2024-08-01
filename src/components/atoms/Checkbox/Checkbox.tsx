@@ -1,3 +1,4 @@
+import { forwardRef } from 'react';
 import styles from './Checkbox.module.scss';
 
 type CheckBoxProps = {
@@ -6,7 +7,7 @@ type CheckBoxProps = {
    onChange: (checked: boolean) => void
 }
 
-const Checkbox = (props: CheckBoxProps) => {
+const Checkbox = forwardRef<HTMLInputElement, CheckBoxProps>((props, ref) => {
 
    const {
       id,
@@ -22,6 +23,7 @@ const Checkbox = (props: CheckBoxProps) => {
             checked={checked}
             onChange={() => onChange(!checked)}
             type="checkbox"
+            ref={ref}
          />
          <label
             htmlFor={id}
@@ -29,6 +31,6 @@ const Checkbox = (props: CheckBoxProps) => {
          />
       </div>
    )
-}
+});
 
 export default Checkbox;
