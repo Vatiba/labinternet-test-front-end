@@ -8,6 +8,7 @@
    &__logoWrapper {
       display: flex;
       align-items: center;
+      z-index: 10000;
    }
 
    &__logo {
@@ -18,8 +19,16 @@
       color: var(--white-color);
    }
 
+   &__logoTxt_black {
+      color: var(--black-color);
+   }
+
    &__nav {
-      display: flex;
+      display: none;
+
+      @media (min-width: 768px) {
+         display: flex;
+      }
    }
 
    &__navItem {
@@ -32,8 +41,39 @@
    }
 }
 
-.burgerBtn {}
+.burgerBtn {
+   margin: -16px;
+
+   @media (min-width: 768px) {
+      display: none !important;
+   }
+}
 
 .burgerBtnStick {
-   background-color: var(--black-color);
+   background-color: var(--black-color) !important;
+}
+
+.drawer {
+   padding-top: 86px;
+   display: flex;
+   flex-direction: column;
+
+   &__item {
+      padding: 16px 0px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid var(--lightGray-color);
+
+      &:first-child {
+         border-top: 1px solid var(--lightGray-color);
+      }
+   }
+
+   &__itemTxt {
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 32px;
+      color: var(--gray-color);
+   }
 }

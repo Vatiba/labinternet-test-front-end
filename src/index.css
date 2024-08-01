@@ -5,6 +5,10 @@
    font-family: sans-serif;
 }
 
+body {
+   overflow-x: hidden;
+}
+
 a {
    text-decoration: none;
    color: inherit;
