@@ -1,11 +1,11 @@
-import React, { forwardRef, HTMLAttributes } from 'react'
+import React, { forwardRef, InputHTMLAttributes } from 'react'
 import clsx from 'clsx'
 import styles from './Input.module.scss';
 
-type InputProps = HTMLAttributes<HTMLInputElement> & {
+type InputProps = InputHTMLAttributes<HTMLInputElement> & {
 }
 
-const Input = forwardRef<HTMLInputElement, InputProps>(({ className, ...props }: InputProps, ref) => {
+const Input = forwardRef<HTMLInputElement, InputProps>(({ className, ...props }, ref) => {
    return (
       <input
          {...props}
