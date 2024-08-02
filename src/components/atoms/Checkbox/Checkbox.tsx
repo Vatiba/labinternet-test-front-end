@@ -1,10 +1,12 @@
 import { forwardRef } from 'react';
 import styles from './Checkbox.module.scss';
+import clsx from 'clsx';
 
 type CheckBoxProps = {
    id?: string
    checked: boolean
    onChange: (checked: boolean) => void
+   className?: string
 }
 
 const Checkbox = forwardRef<HTMLInputElement, CheckBoxProps>((props, ref) => {
@@ -13,10 +15,11 @@ const Checkbox = forwardRef<HTMLInputElement, CheckBoxProps>((props, ref) => {
       id,
       checked,
       onChange,
+      className
    } = props;
 
    return (
-      <div className={styles.checkbox}>
+      <div className={clsx(styles.checkbox, className)}>
          <input
             className={styles.checkbox__input}
             id={id}
