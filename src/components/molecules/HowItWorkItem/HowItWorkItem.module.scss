@@ -1,0 +1,30 @@
+.card {
+   display: flex;
+
+   @media (min-width: 768px) {
+      flex-direction: column;
+   }
+
+   &__img {
+      width: 56px;
+      height: 56px;
+
+      @media (min-width: 768px) {
+         width: 72px;
+         height: 72px;
+      }
+   }
+
+   &__info {
+      margin-left: 16px;
+
+      @media (min-width: 768px) {
+         margin-top: 16px;
+         margin-left: 0px;
+      }
+   }
+
+   &__title {}
+
+   &__desc {}
+}
