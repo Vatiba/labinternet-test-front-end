@@ -1,4 +1,3 @@
-import React from 'react';
 import styles from './CommonInfo.module.scss';
 import Container from 'components/atoms/Container';
 import Text from 'components/atoms/Text';

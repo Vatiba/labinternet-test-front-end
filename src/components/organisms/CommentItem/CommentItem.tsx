@@ -1,4 +1,3 @@
-import React from 'react';
 import styles from './CommentItem.module.scss';
 import Text from 'components/atoms/Text';
 

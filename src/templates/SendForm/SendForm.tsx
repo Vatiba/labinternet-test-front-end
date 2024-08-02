@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import styles from './SendForm.module.scss';
 import Container from 'components/atoms/Container';
 import Text from 'components/atoms/Text';

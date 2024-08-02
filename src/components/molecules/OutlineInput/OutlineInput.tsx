@@ -1,4 +1,4 @@
-import React, { ChangeEvent, forwardRef, InputHTMLAttributes, useImperativeHandle, useRef, useState } from 'react';
+import { ChangeEvent, forwardRef, InputHTMLAttributes, useImperativeHandle, useRef, useState } from 'react';
 import styles from './OutlineInput.module.scss';
 import Input from 'components/atoms/Input';
 import clsx from 'clsx';

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import Container from 'components/atoms/Container';
 import Drawer from 'components/molecules/Drawer';
 import BurgerButton from 'components/molecules/BurgerButton';
