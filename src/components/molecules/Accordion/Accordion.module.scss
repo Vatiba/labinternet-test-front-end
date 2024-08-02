@@ -3,12 +3,17 @@
       cursor: pointer;
       display: flex;
       justify-content: space-between;
-      align-items: center;
+      align-items: flex-start;
       width: 100%;
       border: none;
       background-color: transparent;
       overflow: hidden;
       margin-bottom: 24px;
+      transition: color var(--animation-duration) ease;
+
+      &:hover {
+         color: var(--primary-color);
+      }
    }
 
    &__openIcon {
@@ -27,5 +32,13 @@
    &__expanded {
       transition: height ease var(--animation-duration);
       overflow: hidden;
+   }
+
+   &__text {
+      text-align: left;
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 32px;
+      color: inherit;
    }
 }

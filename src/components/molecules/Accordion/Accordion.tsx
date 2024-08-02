@@ -4,7 +4,6 @@ import clsx from 'clsx';
 
 // icons
 import PlusCircleIcon from 'assets/icons/plus-circle.svg';
-import Text from 'components/atoms/Text';
 
 export type AccordionProps = {
    children: React.ReactNode;
@@ -32,9 +31,9 @@ function Accordion(props: AccordionProps) {
                setIsExpanded(prev => !prev)
             }}
          >
-            <Text.bodyLink18 fontWeight='bold'>
+            <span className={styles.accordion__text}>
                {label}
-            </Text.bodyLink18>
+            </span>
             <img
                className={clsx(
                   styles.accordion__openIcon,
