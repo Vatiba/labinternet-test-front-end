@@ -26,16 +26,16 @@ const Header = () => {
                   </Text.H5>
                </div>
                <nav className={styles.header__nav}>
-                  <Text.bodyLink16 className={styles.header__navItem} href='#'>
+                  <Text.bodyLink16 className={styles.header__navItem} href='#howitswork'>
                      Как это работает
                   </Text.bodyLink16>
-                  <Text.bodyLink16 className={styles.header__navItem} href='#'>
+                  <Text.bodyLink16 className={styles.header__navItem} href='#thirdBlock'>
                      3-й блок
                   </Text.bodyLink16>
-                  <Text.bodyLink16 className={styles.header__navItem} href='#'>
+                  <Text.bodyLink16 className={styles.header__navItem} href='#QA'>
                      Вопросы и ответы
                   </Text.bodyLink16>
-                  <Text.bodyLink16 className={styles.header__navItem} href='#'>
+                  <Text.bodyLink16 className={styles.header__navItem} href='#sendForm'>
                      Форма
                   </Text.bodyLink16>
                </nav>
@@ -55,25 +55,25 @@ const Header = () => {
          >
             <Container>
                <nav className={styles.drawer}>
-                  <a className={styles.drawer__item} href='#'>
+                  <a className={styles.drawer__item} href='#howitswork' onClick={() => setIsOpened(false)}>
                      <span className={styles.drawer__itemTxt}>
                         Как это работает
                      </span>
                      <img src={RighIcon} alt="Go" />
                   </a>
-                  <a className={styles.drawer__item} href='#'>
+                  <a className={styles.drawer__item} href='#thirdBlock' onClick={() => setIsOpened(false)}>
                      <span className={styles.drawer__itemTxt}>
                         3-й блок
                      </span>
                      <img src={RighIcon} alt="Go" />
                   </a>
-                  <a className={styles.drawer__item} href='#'>
+                  <a className={styles.drawer__item} href='#QA' onClick={() => setIsOpened(false)}>
                      <span className={styles.drawer__itemTxt}>
                         Вопросы и ответы
                      </span>
                      <img src={RighIcon} alt="Go" />
                   </a>
-                  <a className={styles.drawer__item} href='#'>
+                  <a className={styles.drawer__item} href='#sendForm' onClick={() => setIsOpened(false)}>
                      <span className={styles.drawer__itemTxt}>
                         Форма
                      </span>

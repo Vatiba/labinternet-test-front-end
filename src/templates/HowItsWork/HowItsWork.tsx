@@ -15,7 +15,7 @@ function HowItsWork() {
    return (
       <section className={styles.howitWork}>
          <Container>
-            <Text.H4 className={styles.howitWork__title}>
+            <Text.H4 className={styles.howitWork__title} id='howitswork'>
                Как это работает
             </Text.H4>
             <div className={styles.row}>
@@ -48,7 +48,7 @@ function HowItsWork() {
                   />
                </div>
             </div>
-            <div className={styles.secondBlock}>
+            <div className={styles.secondBlock} id="thirdBlock">
                <div className={styles.secondBlock__imgWrap}>
                   <img className={styles.secondBlock__img} src={HowItsWorkImg} alt="How it work" />
                </div>

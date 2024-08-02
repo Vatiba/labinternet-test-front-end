@@ -9,7 +9,7 @@ function QuestionAnswer() {
    return (
       <section className={styles.QASection}>
          <Container className={styles.QASection__inner}>
-            <Text.H4 className={styles.QASection__title}>
+            <Text.H4 className={styles.QASection__title} id='QA'>
                Вопросы и ответы
             </Text.H4>
             <div className={styles.QASection__item}>

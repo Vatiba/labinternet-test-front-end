@@ -13,7 +13,7 @@ function SendForm() {
    return (
       <section className={styles.sendForm}>
          <Container className={styles.sendForm__inner}>
-            <Text.H4 className={styles.sendForm__title}>
+            <Text.H4 className={styles.sendForm__title} id='sendForm'>
                Отправь форму
             </Text.H4>
             <form className={styles.row}>
