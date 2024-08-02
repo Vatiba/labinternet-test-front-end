@@ -13,8 +13,7 @@
    &__slider {}
 
    &__item {
-      height: 100%;
-      margin: 0px 16px;
+      margin: 0px 20px;
    }
 
    &__inner {
@@ -22,10 +21,16 @@
    }
 
    &__sliderWrapper {
-      width: calc(100% - 40px); //we need more width for the shadows on the edges
+      width: 100%;
       padding: 30px 5px; //space for the shadows
-      margin-left: 20px; //put the div in its original position
+      // margin-left: -20px; //put the div in its original position
       overflow: hidden; //hide the overflow
+
+      @media (min-width: 768px) {
+         width: calc(100% - 40px); //we need more width for the shadows on the edges
+         margin-left: 20px; //put the div in its original position
+         padding: 30px 5px; //space for the shadows
+      }
    }
 
    &__btn {
@@ -38,10 +43,11 @@
       z-index: 10;
       border: none;
       background-color: transparent;
-   }
+      display: none;
 
-   &__btn:hover svg {
-      fill: var(--primary-color);
+      @media (min-width: 768px) {
+         display: block;
+      }
    }
 
    &__btnLeft {

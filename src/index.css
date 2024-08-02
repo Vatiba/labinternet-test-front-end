@@ -16,6 +16,44 @@ a {
 
 
 /* styles for react slick slider */
+.slick-slide {
+   height: 100%;
+}
+
 .slick-list {
    overflow: visible;
+}
+
+.slick-dots li button::before {
+   display: none;
+}
+
+.slick-dots {
+   bottom: -40px;
+}
+
+.slick-dots li button {
+   width: 8px;
+   height: 8px;
+   border-radius: 100%;
+   background-color: var(--midGray-color);
+}
+
+.slick-dots .slick-active button {
+   width: 8px;
+   height: 8px;
+   border-radius: 100%;
+   background-color: var(--primary-color);
+}
+
+.slick-track {
+   display: flex !important;
+}
+
+.slick-slide {
+   height: inherit !important;
+}
+
+.slick-slide div:only-child {
+   height: 100%;
 }

@@ -12,9 +12,8 @@ import CommentItem from 'components/organisms/CommentItem';
 // images & icons
 import TrashImg1 from 'assets/trashimg/1.png';
 import TrashImg2 from 'assets/trashimg/2.png';
-import RighIcon from 'assets/icons/right.svg';
+import RightIcon from 'assets/icons/right.svg';
 import clsx from 'clsx';
-import RightIcon from 'assets/iconComponent/RightIcon';
 
 
 let settings: Settings = {
@@ -23,7 +22,21 @@ let settings: Settings = {
    autoplay: false,
    slidesToShow: 3,
    slidesToScroll: 1,
-   arrows: false
+   arrows: false,
+   responsive: [
+      {
+         breakpoint: 1024,
+         settings: {
+            slidesToShow: 2,
+         }
+      },
+      {
+         breakpoint: 600,
+         settings: {
+            slidesToShow: 1,
+         }
+      }
+   ]
 };
 
 function Comments() {
@@ -36,20 +49,13 @@ function Comments() {
                className={clsx(styles.comments__btn, styles.comments__btnLeft)}
                onClick={() => slider?.current?.slickPrev()}
             >
-               <RightIcon
-                  rotate={10}
-                  width={45}
-                  height={45}
-               />
+               <img className={styles.comments__btnLeftIcon} src={RightIcon} alt="Left" />
             </button>
             <button
                className={clsx(styles.comments__btn, styles.comments__btnRight)}
                onClick={() => slider?.current?.slickNext()}
             >
-               <RightIcon
-                  width={45}
-                  height={45}
-               />
+               <img className={styles.comments__btnRightIcon} src={RightIcon} alt="Left" />
             </button>
             <div className={styles.comments__sliderWrapper}>
                <Slider ref={slider} {...settings}>
