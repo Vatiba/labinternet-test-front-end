@@ -1,0 +1,63 @@
+.comments {
+   background-color: var(--extraLightGray-color);
+   padding: 27px 0px 37px 0px;
+
+   @media (min-width:375px) {
+      padding: 33px 0px 45px 0px;
+   }
+
+   @media (min-width:768px) {
+      padding: 57px 0px 45px 0px;
+   }
+
+   &__slider {}
+
+   &__item {
+      height: 100%;
+      margin: 0px 16px;
+   }
+
+   &__inner {
+      position: relative;
+   }
+
+   &__sliderWrapper {
+      width: calc(100% - 40px); //we need more width for the shadows on the edges
+      padding: 30px 5px; //space for the shadows
+      margin-left: 20px; //put the div in its original position
+      overflow: hidden; //hide the overflow
+   }
+
+   &__btn {
+      position: absolute;
+      top: 0;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      z-index: 10;
+      border: none;
+      background-color: transparent;
+   }
+
+   &__btn:hover svg {
+      fill: var(--primary-color);
+   }
+
+   &__btnLeft {
+      left: 0;
+   }
+
+   &__btnRight {
+      right: 0;
+   }
+
+   &__btnLeftIcon {
+      transform: rotate(180deg);
+      width: 45px;
+   }
+
+   &__btnRightIcon {
+      width: 45px;
+   }
+}

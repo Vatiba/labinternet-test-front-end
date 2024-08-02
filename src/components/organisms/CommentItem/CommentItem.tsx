@@ -2,11 +2,16 @@ import React from 'react';
 import styles from './CommentItem.module.scss';
 import Text from 'components/atoms/Text';
 
+// img
+import UserImg from 'assets/images/user.jpeg';
+import clsx from 'clsx';
+
 type CommentItemProps = {
-   authorAvatar: string
+   authorAvatar?: string
    authorName: string
    authorCity: string
    comment: string
+   className?: string
 }
 
 function CommentItem(props: CommentItemProps) {
@@ -15,12 +20,13 @@ function CommentItem(props: CommentItemProps) {
       authorName,
       authorCity,
       comment,
+      className,
    } = props;
 
    return (
-      <div className={styles.commentCard}>
+      <div className={clsx(styles.commentCard, className)}>
          <div className={styles.commentCard__head}>
-            <img className={styles.commentCard__authorAvatar} src={authorAvatar} alt="Author avatar" />
+            <img className={styles.commentCard__authorAvatar} src={authorAvatar ? authorAvatar : UserImg} alt="Author avatar" />
             <div className={styles.commentCard__authorInfo}>
                <Text.H6 className={styles.commentCard__authorName}>
                   {authorName}
